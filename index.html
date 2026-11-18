@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>Happy Birthday Hazouma</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--gold:#d8b56d;--gold2:#f3dfa9;--ink:#090909;--muted:#b9b2a4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:#f8f3e9;font-family:'Cairo',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#8c672522,transparent 48%),radial-gradient(ellipse at 90% 80%,#b88b2410,transparent 35%);z-index:-1}
+nav{position:absolute;top:0;left:0;right:0;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.brand{font-family:'Playfair Display',serif;letter-spacing:3px;color:var(--gold);font-size:17px}
+nav span:last-child{font-size:12px;color:#bdb5a5;letter-spacing:2px}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 22px 65px;position:relative}
+.hero:after{content:"";position:absolute;width:min(78vw,560px);height:min(78vw,560px);border:1px solid #d8b56d35;border-radius:50%;box-shadow:0 0 90px #d8b56d12,inset 0 0 70px #d8b56d0a}
+.hero-inner{position:relative;z-index:1;max-width:720px}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:4px;margin-bottom:24px}
+h1{font-family:'Playfair Display',serif;font-size:clamp(48px,10vw,96px);line-height:1.05;margin:0;color:var(--gold2);font-weight:600;text-shadow:0 5px 35px #d8b56d35;direction:ltr}
+.subtitle{font-size:clamp(18px,3vw,24px);margin:22px 0 8px;color:#f6eddb}
+.date{color:var(--muted);font-size:14px;letter-spacing:2px;direction:ltr}
+.gold-line{width:70px;height:1px;background:var(--gold);margin:28px auto}
+.intro{max-width:510px;margin:0 auto 30px;color:#c9c1b2;line-height:2;font-size:15px}
+.btn{border:1px solid var(--gold);color:var(--gold2);background:linear-gradient(120deg,#d8b56d20,#d8b56d05);padding:13px 28px;border-radius:2px;font:600 14px 'Cairo';cursor:pointer;transition:.25s}
+.btn:hover{background:var(--gold);color:#111;transform:translateY(-2px)}
+section{padding:90px 22px;max-width:900px;margin:auto}
+.section-tag{text-align:center;color:var(--gold);letter-spacing:3px;font-size:11px;direction:ltr}
+h2{text-align:center;font:600 clamp(30px,6vw,44px) 'Playfair Display',serif;color:var(--gold2);margin:12px 0 34px;direction:ltr}
+.letter{max-width:680px;margin:auto;padding:clamp(25px,6vw,55px);border:1px solid #d8b56d55;background:linear-gradient(145deg,#ffffff08,#d8b56d08);box-shadow:0 20px 70px #0008;position:relative}
+.letter:before,.letter:after{content:"✦";position:absolute;color:var(--gold);font-size:17px}.letter:before{top:16px;left:18px}.letter:after{bottom:16px;right:18px}
+.letter p{color:#e5ddce;line-height:2.2;font-size:16px;margin:0 0 15px}
+.signature{color:var(--gold2)!important;font-weight:700;text-align:left;margin-top:25px!important}
+.memories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.memory{aspect-ratio:4/5;border:1px solid #d8b56d55;background:linear-gradient(145deg,#26231d,#100f0c);display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;color:#c9b98f;font-size:13px;position:relative;overflow:hidden}
+.memory:before{content:"✧";position:absolute;font-size:54px;color:#d8b56d22}
+.memory span{position:relative;z-index:1}
+.note{text-align:center;color:#a9a191;font-size:12px;margin-top:14px}
+.countdown{display:flex;justify-content:center;gap:12px;direction:ltr;flex-wrap:wrap}
+.unit{border:1px solid #d8b56d55;min-width:75px;padding:15px 12px;text-align:center;background:#ffffff06}
+.unit strong{display:block;font:600 28px 'Playfair Display';color:var(--gold2)}
+.unit small{color:#aaa18f;font-size:10px;letter-spacing:1px}
+footer{text-align:center;padding:45px 20px 55px;color:#918979;font-size:12px}
+footer b{color:var(--gold)}
+.reveal{opacity:0;transform:translateY(18px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:600px){nav{padding:18px 6%}.memories{grid-template-columns:1fr;max-width:280px;margin:30px auto}.memory{aspect-ratio:5/3}.intro{font-size:14px}section{padding:70px 20px}}
+
+.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:35px auto 60px}
+.photo-gallery figure{margin:0;border:1px solid #d8b56d66;background:linear-gradient(145deg,#ffffff0a,#d8b56d08);padding:8px;box-shadow:0 16px 40px #0008}
+.photo-gallery img{display:block;width:100%;height:340px;object-fit:cover;filter:saturate(.88);transition:transform .35s,filter .35s}
+.photo-gallery figure:hover img{transform:scale(1.015);filter:saturate(1.05)}
+.photo-gallery figcaption{color:#d8c69e;text-align:center;font-size:12px;padding:12px 5px 7px}
+.video-tag{margin-top:20px}.video-heading{margin-bottom:25px}
+.video-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.video-gallery video{width:100%;max-height:420px;background:#000;border:1px solid #d8b56d66}
+@media(max-width:600px){.photo-gallery{gap:10px}.photo-gallery img{height:230px}.photo-gallery figure{padding:5px}.photo-gallery figcaption{font-size:11px}.video-gallery{grid-template-columns:1fr}}
+
+
+.music-card{max-width:590px;margin:0 auto;padding:30px 22px;text-align:center;border:1px solid #d8b56d66;background:linear-gradient(145deg,#ffffff0a,#d8b56d0b);box-shadow:0 20px 70px #0008}
+.music-disc{width:64px;height:64px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;margin:0 auto 16px;color:var(--gold2);font-size:30px;box-shadow:0 0 28px #d8b56d25}
+.music-title{font:600 28px 'Playfair Display',serif;color:var(--gold2);direction:ltr}
+.music-artist{font-size:12px;color:#b9b2a4;margin-top:6px;direction:ltr}
+.music-card p{color:#d8c69e;font-size:14px;margin:20px 0}
+.youtube-frame{position:relative;width:100%;aspect-ratio:16/9;margin-top:18px;background:#000}
+.youtube-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:1px solid #d8b56d66}
+.music-caption{font-size:12px;color:#aaa18f;margin-top:14px}
+
+</style>
+</head>
+<body>
+<nav><div class="brand">H &nbsp; ✦ &nbsp; 19.11</div><span>A SPECIAL DAY</span></nav>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">A DAY AS SPECIAL AS YOU</div>
+  <h1>Happy Birthday</h1>
+  <div class="subtitle">My Hazouma ♡</div>
+  <div class="date">19 NOVEMBER 1999</div>
+  <div class="gold-line"></div>
+  <p class="intro">النهارده مش يوم عادي… ده اليوم اللي اتولد فيه شخص وجوده بيخلّي الدنيا أحلى. كل سنة وإنت أجمل حكاية في حياتي.</p>
+  <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">افتح مفاجأتك ✦</button>
+ </div>
+</header>
+<section id="letter" class="reveal">
+ <div class="section-tag">A LETTER FROM MY HEART</div>
+ <h2>To My Favorite Person</h2>
+ <div class="letter">
+  <p>إلى حازم، حَزومه بتاعي ❤️</p>
+  <p>كل سنة وإنت طيب يا حبيبي، وكل سنة وإنت سبب في ضحكتي وسبب في حاجات حلوة كتير في أيامي. أتمنى سنتك الجديدة تكون مليانة نجاح وفرحة وراحة بال، وتحقق فيها كل اللي نفسك فيه.</p>
+  <p>يمكن الكلام مش هيقدر يوصف إنت غالي عندي قد إيه، بس أتمنى تفضل دايمًا مبسوط، وتفضل ضحكتك منوّرة الدنيا. ويا رب أفضل جنبك في أعياد ميلاد كتير جاية ونحتفل بكل أحلامنا سوا.</p>
+  <p>عيد ميلاد سعيد يا أحلى حازومه في الدنيا. ❤️</p>
+  <p class="signature">With all my love ♡</p>
+ </div>
+</section>
+<section class="reveal">
+ <div class="section-tag">OUR LITTLE WORLD</div>
+ <h2>Little Moments, Big Memories</h2>
+ <div class="photo-gallery">
+  <figure><img src="assets/IMG_3596.jpeg" alt="A special memory together"><figcaption>One of my favorite smiles ♡</figcaption></figure>
+  <figure><img src="assets/IMG_3595.jpeg" alt="A happy moment together"><figcaption>My happy place ✦</figcaption></figure>
+  <figure><img src="assets/IMG_3391.jpeg" alt="A lovely day together"><figcaption>Every moment with you</figcaption></figure>
+  <figure><img src="assets/IMG_3414.jpeg" alt="A memory together"><figcaption>Us, just being us ♡</figcaption></figure>
+  <figure><img src="assets/IMG_2374.jpeg" alt="A day by the sea"><figcaption>Our beautiful days</figcaption></figure>
+  <figure><img src="assets/IMG_2218.jpeg" alt="A trip memory"><figcaption>More memories to come</figcaption></figure>
+  <figure><img src="assets/IMG_2073.jpeg" alt="A special trip together"><figcaption>My favorite adventure</figcaption></figure>
+  <figure><img src="assets/IMG_1792.jpeg" alt="A lovely memory"><figcaption>Forever grateful for you</figcaption></figure>
+ </div>
+ <div class="section-tag video-tag">MOVING MEMORIES</div>
+ <h2 class="video-heading">A Few Seconds of Us</h2>
+ <div class="video-gallery">
+  <video controls playsinline preload="metadata"><source src="assets/90ecf24a6e9e40c299a4f352c3bdb151.mp4" type="video/mp4"></video>
+  <video controls playsinline preload="metadata"><source src="assets/acaa91e65a5140779d443ac618afe510.mp4" type="video/mp4"></video>
+ </div>
+</section>
+<section class="reveal" id="our-song">
+ <div class="section-tag">OUR SPECIAL SONG</div>
+ <h2>Press Play, My Love</h2>
+ <div class="music-card">
+  <div class="music-disc">♫</div>
+  <div class="music-title">See You Again</div>
+  <div class="music-artist">Wiz Khalifa ft. Charlie Puth</div>
+  <p>“Every memory with you is my favorite one.”</p>
+  <div class="youtube-frame">
+   <iframe src="https://www.youtube-nocookie.com/embed/RgKAFK5djSk?rel=0" title="See You Again - Wiz Khalifa ft. Charlie Puth" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="music-caption">اضغط تشغيل واسمع أغنيتك المفضلة ❤️</div>
+ </div>
+</section>
+<section class="reveal">
+ <div class="section-tag">THE COUNTDOWN TO YOUR DAY</div>
+ <h2>Every moment is yours</h2>
+ <div class="countdown" id="countdown">
+  <div class="unit"><strong id="days">--</strong><small>DAYS</small></div>
+  <div class="unit"><strong id="hours">--</strong><small>HOURS</small></div>
+  <div class="unit"><strong id="minutes">--</strong><small>MINUTES</small></div>
+  <div class="unit"><strong id="seconds">--</strong><small>SECONDS</small></div>
+ </div>
+ <p class="note" id="countText">19 November — your day, your moment.</p>
+</section>
+<footer>MADE WITH <b>♥</b> JUST FOR HAZOUMA <br><br>19 · 11 · 1999</footer>
+<script>
+const target = new Date('2026-11-19T00:00:00');
+function tick(){
+ const now=new Date(); let diff=target-now;
+ if(diff<0){document.getElementById('countText').textContent='Happy Birthday, Hazouma! اليوم يومك ❤️';diff=0}
+ const d=Math.floor(diff/86400000),h=Math.floor(diff%86400000/3600000),m=Math.floor(diff%3600000/60000),s=Math.floor(diff%60000/1000);
+ document.getElementById('days').textContent=d;document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('minutes').textContent=String(m).padStart(2,'0');document.getElementById('seconds').textContent=String(s).padStart(2,'0');
+}
+tick();setInterval(tick,1000);
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
